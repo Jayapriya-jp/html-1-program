@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h1> Assignment1(fruits)</h1>
+        <button onclick="myFunction()">Try </button>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <script>
+
+            let fruits=["Apple","Banana","Orange"];       
+  fruits.push("Grape");
+  document.getElementById("demo").innerHTML = fruits; 
+  fruits.shift();
+  document.getElementById("demo1").innerHTML = fruits; 
+
+  fruits[0] +=" ,"+"pear";
+  document.getElementById("demo2").innerHTML = fruits;
+  console.log(fruits)
+
+        </script>
+    </body>
+</html>
