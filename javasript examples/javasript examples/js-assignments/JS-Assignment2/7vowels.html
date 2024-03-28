@@ -1,0 +1,46 @@
+<h2>vowels</h2>
+<script>
+function countVowels(str){
+    str=str.toLowerCase();
+    let count = 0;
+    for(let i=0; i<str.length;i++){
+    if(str[i]==="a" || str[i]==="e"|| str[i] ==="i" || str[i]==="o" || str[i]==="u"){
+        count++;
+        }
+    }
+
+     return count;
+}
+ 
+
+const inputString = "JavaScript function to count vowels";
+console.log("Number of vowels:", countVowels(inputString)); // Output will depend on the input string  
+</script>
+
+
+<!-- <script>
+function countVowels(str) {
+    // Convert the string to lowercase to handle both uppercase and lowercase vowels
+    str = str.toLowerCase();
+    
+    // Initialize a variable to store the count of vowels
+    let count = 0;
+    
+    // Loop through each character in the string
+    for (let i = 0; i < str.length; i++) {
+        // Check if the current character is a vowel
+        if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u') {
+            // If it's a vowel, increment the count
+            count++;
+        }
+    }
+    
+    // Return the total count of vowels
+    return count;
+}
+
+// Example usage:
+const inputString = "JavaScript function to count vowels";
+console.log("Number of vowels:", countVowels(inputString)); // Output will depend on the input string
+</script>
+ -->

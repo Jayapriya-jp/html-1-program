@@ -1,0 +1,26 @@
+
+<h2>primenumber</h2><script>function printPrimesUpToN(n) {
+    // Helper function to check if a number is prime
+    function isPrime(num) {
+        if (num <= 1) return false;
+        if (num <= 3) return true;
+        if (num % 2 === 0 || num % 3 === 0) return false;
+        let i = 5;
+        while (i * i <= num) {
+            if (num % i === 0 || num % (i + 1) === 0) return false;
+            i += 6;
+        }
+        return true;
+    }
+    
+    // Loop through numbers up to n and print primes
+    for (let i = 2; i <= n; i++) {
+        if (isPrime(i)) {
+            console.log(i);
+        }
+    }
+}
+
+// Example usage:
+printPrimesUpToN(20);
+</script>

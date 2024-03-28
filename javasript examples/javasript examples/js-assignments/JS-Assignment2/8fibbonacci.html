@@ -1,0 +1,27 @@
+<h1>fibonacci</h1>
+<script>function fibonacciSeries(limit) {
+    let fibonacci = [0, 1];
+
+    // Check if the limit is less than or equal to 0
+    if (limit <= 0) {
+        console.log("Invalid limit. Please provide a positive number.");
+        return;
+    }
+    // Print the first two Fibonacci numbers
+    console.log("Fibonacci series up to " + limit + ":");
+    console.log(fibonacci[0]);
+    if (limit === 1) return;
+    console.log(fibonacci[1]);
+
+    // Generate and print subsequent Fibonacci numbers until reaching the limit
+    let nextFibonacci = fibonacci[0] + fibonacci[1];
+    while (nextFibonacci <= limit) {
+        console.log(nextFibonacci);
+        fibonacci[0] = fibonacci[1];
+        fibonacci[1] = nextFibonacci;
+        nextFibonacci = fibonacci[0] + fibonacci[1];
+    }
+}
+// Example usage:
+fibonacciSeries(100); // Change the argument to generate Fibonacci series up to a different number
+</script>

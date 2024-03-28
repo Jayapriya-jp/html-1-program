@@ -7,11 +7,12 @@
         <p id="demo2"></p>
         <script>
 
-            let fruits=["Apple","Banana","Orange"];       
-  fruits.push("Grape");
+            let fruits=["Apple","Banana","Orange"];   
+            fruits.shift();
+  document.getElementById("demo1").innerHTML = fruits;     
+  fruits.push("Grape");//("Apple","Banana","Orange","grape")
   document.getElementById("demo").innerHTML = fruits; 
-  fruits.shift();
-  document.getElementById("demo1").innerHTML = fruits; 
+ 
 
   fruits[0] +=" ,"+"pear";
   document.getElementById("demo2").innerHTML = fruits;
